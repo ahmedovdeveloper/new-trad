@@ -1,0 +1,326 @@
+/* Общие стили */
+
+
+* {
+  font-family: 'Poppins', 'aktiv-grotesk', sans-serif;
+}
+
+
+.app {
+  min-height: 100vh;
+  max-width: 400px;
+  margin: 0 auto;
+  /* background: #f9f9f9; */
+  font-family: Arial, sans-serif;
+  color: #111;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: white;
+}
+.title {
+  font-size: 22px;
+  font-weight: bold;
+}
+.header-icons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  color: #555;
+}
+.icon-small {
+  width: 20px;
+  height: 20px;
+  color: #555;
+}
+.notification {
+  position: relative;
+}
+.dot {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 50%;
+}
+
+/* Card */
+.card {
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  background: white;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.promo-card {
+  background: linear-gradient(to right, #fff8e1, #fff3e0);
+  border-color: #ffcc80;
+}
+.promo-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.promo-title {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.promo-text {
+  font-size: 14px;
+  color: #555;
+}
+.promo-icon .promo-circle {
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.promo-square {
+  width: 28px;
+  height: 28px;
+  background: #bbb;
+  transform: rotate(45deg);
+  border-radius: 4px;
+}
+
+/* Account Section */
+.account {
+  padding: 16px;
+}
+.account-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.account-name {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: bold;
+}
+.account-actions {
+  display: flex;
+  gap: 8px;
+}
+.small-box {
+  width: 24px;
+  height: 24px;
+  background: #ddd;
+  border-radius: 6px;
+}
+
+/* Tags */
+.account-tags {
+  display: flex;
+  gap: 10px;
+}
+.account-tags span {
+  padding: 2px 6px;
+  background: #eee;
+  border-radius: 6px;
+  font-size: 13px;
+}
+.account-id {
+  color: #777;
+}
+
+/* Balance */
+.balance h3 {
+  font-size: 28px;
+  font-weight: bold;
+  /* margin-bottom: 20px; */
+}
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+.action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6px;
+}
+.circle.yellow {
+  background: #ffeb3b;
+}
+.circle.gray {
+  background: #f0f0f0;
+}
+.icon-dark {
+  color: black;
+}
+
+/* Orders */
+.orders {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: white;
+  box-shadow: #111;
+  border-radius: 20px 20px 20px 20px  ;
+  padding: 20px;
+  -webkit-box-shadow: 0px 5px 29px 2px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0px 5px 29px 2px rgba(34, 60, 80, 0.2);
+box-shadow: 0px 5px 29px 2px rgba(34, 60, 80, 0.2);
+}
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+.tab {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  background: none;
+  font-size: 14px;
+  color: #777;
+  cursor: pointer;
+}
+.tab.active {
+  color: black;
+  border-bottom: 2px solid black;
+}
+.extra-box {
+  width: 24px;
+  height: 24px;
+  background: #eee;
+  border-radius: 6px;
+  margin-left: 8px;
+}
+.no-orders {
+  text-align: center;
+  padding: 40px 0;
+  color: #777;
+}
+.btc-trade {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f5f5f5;
+  padding: 12px;
+  border-radius: 10px;
+}
+.btc-icon {
+  width: 32px;
+  height: 32px;
+  background: orange;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Bottom Nav */
+.bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ddd;
+  background: white;
+  padding: 8px 16px;
+}
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  color: #777;
+  border: none;
+  background: none;
+  cursor: pointer;
+}title
+.nav-item.active {
+  color: black;
+  font-weight: bold;
+}
+
+.bg-title { 
+  background-color: white;
+}
+.nav-icon {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 4px;
+}
+
+
+.img-promo-icon {
+  width: 90px;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 6px 0;
+  z-index: 1000;
+}
+
+.bottom-nav button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  color: #666;
+  cursor: pointer;
+  flex: 1;
+  padding: 6px 0;
+  transition: color 0.2s ease-in-out;
+}
+
+.bottom-nav button:active,
+.bottom-nav button:hover {
+  color: #000;
+}
+
+.bottom-nav .nav-icon {
+  width: 22px;
+  height: 22px;
+  margin-bottom: 3px;
+  stroke: currentColor;
+}
+
+.bottom-nav button.active {
+  color: #007bff; /* Синий для активной вкладки */
+  font-weight: 600;
+}
+
+
+.arrow_down_up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
