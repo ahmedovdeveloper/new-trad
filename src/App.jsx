@@ -66,7 +66,7 @@ export default function App() {
         <Card className="p-5">
           <div className="flex justify-between items-center mb-4">
             <div className="flex items-center gap-2">
-              <h2 className="text-2xl font-bold text-black">axmados</h2>
+              <h2 className="text-2xl font-bold text-black">Akhmad</h2>
               <ChevronDown className="w-5 h-5 text-gray-500" />
             </div>
             <div>
@@ -101,7 +101,7 @@ export default function App() {
 
           {/* Balance */}
           <div className="mb-6">
-            <h3 className="text-4xl font-bold text-black mb-6">0 USD</h3>
+            <h3 className="text-4xl font-bold text-black mb-6">2000 USD</h3>
             <div className="flex justify-between">
               <div className="flex flex-col items-center">
                 <div className="w-14 h-14 bg-yellow-400 rounded-full flex items-center justify-center mb-2">
